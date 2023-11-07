@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsa Survey <Form></Form></title>
+    <link rel="stylesheet" href="amsa.css">
+</head>
+<body>
+    <main class="head">
+        <h1 id="title">Amsa Survey Form</h1>
+        <p id="description">This form is to get the data analysis of amsa member that will be attending tabligh workshop</p>
+    </main>
+    <form action="https://www.facebook.com/p/Ahmadi-Muslim-Students-Association-Nigeria-100081878287584/" id="survey-form">
+        <fieldset>
+            <label for="name-" id="name-label">Name: <input type="text" id="name" class="form-control" placeholder="input your full name"  required></label>
+            <label for="email" id="email-label">Email <input type="email" id="email" class="form-control" placeholder="email@gmail.com" required></label>
+            <label for="number" id="number-label">Unit no: <input type="number" id="number"  class="form-control" placeholder="enter your unit no" min="12" max="45" required></label>
+            <label for="office">Office held in your unit <input type="text" placeholder="amsa president"  required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Would you be attending the tabligh workshop</legend>
+            <label for="worksop"><input id="worksop" type="radio" value="option" name="response" class="inline" checked />YES</label>
+            <label for="worksop"><input id="worksop" type="radio" value="option" name="response" class="inline" />NO</label>
+            <label for="worksop"><input id="worksop" type="radio" value="option" name="response" class="inline" />MAYBE</label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown"> Which competition are you partaking in?
+                <select name="competition" id="dropdown">
+                    <option value="">Specialization</option>
+                    <option value="1">Qur'an</option>
+                    <option value="2">Qaseedah</option>
+                    <option value="3">Seerah</option>
+                    <option value="4">Haddith</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Which sports are suitable for the tabligh workshop?</p>
+            <label for="football"><input type="checkbox" id="football" value="ball">Football</label>
+            <label for="tennis"><input type="checkbox" id="football" value="tennis">Table-tennis</label>
+            <label for="scrabble"><input type="checkbox" id="football" value="scrabble">Scrabble</label>
+            <label for="takwondo"><input type="checkbox" id="football" value="takwondo">Taekwondo</label>
+            <label for="race"><input type="checkbox" id="football" value="race">Relay race</label>
+        </fieldset>
+        <fieldset>Feedback on last year workshop.
+            <label for="feedback"><textarea name="feedback" id="feedback" cols="30" rows="5"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit"/>
+    </form>
+</body>
+</html>
